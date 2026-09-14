@@ -5,8 +5,7 @@ export const options = {
   vus: 30, 
   duration: "1m",
   thresholds: {
-    
-    http_req_duration: ['p(95)<300'], // SLO: p95 < 300ms
+    http_req_duration: ['p(95)<50'], // SLO: p95 < 633ms
     http_req_failed: ['rate<0.01'],   // SLO: error rate < 1%
   },
 };
